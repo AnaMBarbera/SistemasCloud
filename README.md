@@ -2,6 +2,12 @@
 
 ¡Hola! Bienvenid@ a mi portfolio de aprendizaje en la nube. En este espacio documento de forma práctica mis habilidades, arquitecturas y laboratorios desplegados en diferentes proveedores cloud.
 
+## Navegación
+
+- [Inicio](./README.md)
+- [Retos](#proyectos-y-retos-resueltos)
+- [Tecnologías y proveedores](#tecnologías-y-proveedores)
+
 ## Tecnologías y Proveedores
 
 - **Cloud:** Amazon Web Services (AWS), Google Cloud Platform (GCP)
@@ -9,5 +15,12 @@
 
 ## Proyectos y Retos Resueltos
 
-1. [Reto 1: Inicialización de Entornos Cloud (AWS & GCP)](./reto01_registro/README.md) _<!-- Aquí pondrás el enlace a tu carpeta reto-01 -->_
-2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](#) _<!-- Aquí pondrás el enlace a tu carpeta reto-02 -->_
+1. [Reto 1: Inicialización de Entornos Cloud (AWS & GCP)](./reto01_registro/README.md)
+
+   Configuración inicial de los entornos AWS y GCP, gestión de costes,
+   Free Tier y medidas básicas de seguridad.
+
+2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](./reto02_registro/README.md)
+
+   Despliegue de una instancia EC2, configuración del acceso SSH,
+   actualización del sistema y primeras medidas de seguridad.

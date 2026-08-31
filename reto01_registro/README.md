@@ -1,8 +1,24 @@
+[Portfolio](../README.md) › [Reto 1](./README.md)
+
 # Reto 1: Configuración de Entornos Cloud y Gestión de Costes (AWS & GCP)
 
 ## Objetivo
 
 Establecer las bases operativas en Amazon Web Services (AWS) y Google Cloud Platform (GCP), configurando las consolas de administración y aplicando buenas prácticas de control de costes para mantener el entorno dentro de las opciones gratuitas disponibles.
+
+## Contenido
+
+- [Objetivo](#objetivo)
+- [Proceso de Implementación](#proceso-de-implementación)
+  - [1. Alta y Configuración en AWS](#1-alta-y-configuración-en-aws)
+    - [Evidencias adicionales](#evidencias-adicionales)
+  - [2. Alta y Configuración en GCP](#2-alta-y-configuración-en-gcp)
+    - [Evidencias adicionales](#evidencias-adicionales-1)
+  - [3. Estrategia de Control de Costes](#3-estrategia-de-control-de-costes)
+    - [AWS](#aws)
+    - [GCP](#gcp)
+- [Buenas Prácticas de Seguridad Aplicadas](#buenas-prácticas-de-seguridad-aplicadas)
+- [Conclusión](#conclusión)
 
 ## Proceso de Implementación
 
@@ -10,7 +26,7 @@ Establecer las bases operativas en Amazon Web Services (AWS) y Google Cloud Plat
 
 Accedí a la consola de AWS y configuré el panel principal. Para asegurar la cuenta, validé los accesos básicos.
 
-![Consola AWS](./img/aws_menu_cuenta.png)
+[Consola AWS](./img/aws_menu_cuenta.png)
 
 _(Nota: Información sensible como ID de cuenta y usuario root han sido pixelados por seguridad)._
 
@@ -29,8 +45,6 @@ También configuré la autenticación multifactor (MFA), un presupuesto para con
 
   [Paso final](./img/aws_user4.png)
 
-  [![Paso 4](./img/aws_user4.png)](./img/aws_user4.png)
-
 - [Configuración de presupuesto](./img/aws_presup_pasos.png)
 
 - [Estado del presupuesto](./img/aws_presup_status.png)
@@ -41,7 +55,7 @@ También configuré la autenticación multifactor (MFA), un presupuesto para con
 
 Accedí a la consola de Google Cloud y configuré el proyecto "Bases de datos con Firebase", revisando la estructura de facturación, los permisos IAM y los principales servicios disponibles.
 
-![Consola GCP](./img/gcp-dashboard.png)
+[Consola GCP](./img/gcp-dashboard.png)
 
 Como parte de la configuración inicial se revisaron los principales recursos y servicios del proyecto:
 
@@ -89,7 +103,7 @@ Para reducir el riesgo de cargos inesperados, configuré mecanismos de control d
 
 Se configuró un presupuesto con alertas para controlar el consumo y recibir notificaciones cuando el gasto alcance los umbrales establecidos.
 
-![Alerta de Presupuesto AWS](./img/aws_presup_pasos.png)
+[Alerta de Presupuesto AWS](./img/aws_presup_pasos.png)
 
 #### GCP
 
@@ -97,15 +111,15 @@ En GCP revisé la cuenta de facturación y configuré un presupuesto mensual de 
 
 Actualmente el gasto registrado es de 0,00 €, por lo que el proyecto se mantiene dentro del objetivo de control de costes.
 
-![Presupuesto y alertas GCP](./img/gcp-budget-alerts.png)
+[Presupuesto y alertas GCP](./img/gcp-budget-alerts.png)
 
 También se verificó que actualmente no existen créditos disponibles en la cuenta de facturación.
 
-![Créditos GCP](./img/gcp-billing-credits.png)
+[Créditos GCP](./img/gcp-billing-credits.png)
 
 Se revisaron además los recursos desplegados para comprobar que no existen máquinas virtuales de Compute Engine activas.
 
-![Compute Engine GCP](./img/gcp_compute_engine.png)
+[Compute Engine GCP](./img/gcp_compute_engine.png)
 
 ## Buenas Prácticas de Seguridad Aplicadas
 
@@ -123,3 +137,8 @@ La configuración inicial de los entornos AWS y GCP queda establecida, incluyend
 Actualmente ambos entornos se mantienen bajo control, sin costes relevantes registrados, y cuentan con mecanismos de alerta para detectar posibles incrementos de consumo.
 
 Esta configuración proporciona una base segura para continuar con los siguientes retos y comenzar a desplegar recursos cloud de forma controlada.
+
+## Navegación
+
+🏠 [Índice del Portfolio](../README.md)  
+-> [Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux vía SSH](../reto02_instanciaEC2/README.md)

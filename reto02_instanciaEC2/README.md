@@ -1,8 +1,18 @@
+[Portfolio](../README.md) › [Reto 2](./README.md)
+
 # Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux via SSH
 
 ## Objetivo
 
 Desplegar una instancia virtual EC2 en AWS de forma segura, establecer conexión remota mediante llaves criptográficas (SSH) y realizar el aprovisionamiento inicial del sistema operativo Linux.
+
+## Contenido
+
+- [Paso 1: Lanzamiento de la instancia EC2](#paso-1-lanzamiento-de-la-instancia-ec2)
+- [Paso 2: Conexión segura por SSH](#paso-2-conexión-segura-por-ssh)
+- [Paso 3: Configuración y actualización del sistema](#paso-3-configuración-y-actualización-del-sistema)
+- [Paso 4: Configuración de seguridad](#paso-4-configuración-de-seguridad)
+- [Aprendizajes clave](#-aprendizajes-clave)
 
 ## Guía Paso a Paso
 
@@ -28,7 +38,9 @@ equipo utilizado para la administración.
 La conexión administrativa se realizó mediante SSH utilizando
 un par de claves.
 
-![Conexión SSH](./img/aws_keys.png)
+[aws creación de claves](./img/aws_keys.png)
+
+[Conexión SSH](./img/aws_conexionSSH.png)
 
 ![Conexión SSH](./img/aws_conexionSSH.png)
 
@@ -44,9 +56,17 @@ Una vez dentro de Linux, ejecuté la actualización de los repositorios y del so
 sudo apt update && sudo apt upgrade -y
 ```
 
-![Actualización del sistema](./img/aws_ssh_actualizar.png)
+[Actualización del sistema](./img/aws_ssh_actualizar.png)
 
-## 💡 Aprendizajes Clave
+## Aprendizajes Clave
 
 - Gestión de llaves SSH y permisos en entornos Unix.
 - Ciclo de vida básico de una instancia de computación en la nube.
+
+---
+
+## Navegación
+
+<- [Reto 1: Inicialización de Entornos Cloud](../reto01_registro/README.md)  
+🏠 [Índice del Portfolio](../README.md)  
+-> Reto 3: Próximamente
