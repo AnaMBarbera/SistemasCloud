@@ -69,4 +69,4 @@ sudo apt update && sudo apt upgrade -y
 
 <- [Reto 1: Inicialización de Entornos Cloud](../reto01_registro/README.md)  
 🏠 [Índice del Portfolio](../README.md)  
--> Reto 3: Próximamente
+-> [Reto 3: Almacenamiento y recuperación de archivos](../reto03_storage/README.md)

@@ -20,7 +20,12 @@
    Configuración inicial de los entornos AWS y GCP, gestión de costes,
    Free Tier y medidas básicas de seguridad.
 
-2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](./reto02_registro/README.md)
+2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](./reto02_instanciaEC2/README.md)
 
    Despliegue de una instancia EC2, configuración del acceso SSH,
    actualización del sistema y primeras medidas de seguridad.
+
+3. [Reto 3: Almacenamiento y recuperación de archivos](./reto03_storage/README.md)
+
+   AWS: Creación del bucket en AWS S3. Carga de archivos. Gestión de permisos de acceso y creación de enlaces URL
+   GCP:
