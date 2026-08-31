@@ -39,7 +39,7 @@ También configuré la autenticación multifactor (MFA), un presupuesto para con
 
 ### 2. Alta y Configuración en GCP
 
-**Accedí a la consola de Google Cloud y configuré el proyecto "Bases de datos con Firebase", revisando la estructura de facturación, los permisos IAM y los principales servicios disponibles.**
+Accedí a la consola de Google Cloud y configuré el proyecto "Bases de datos con Firebase", revisando la estructura de facturación, los permisos IAM y los principales servicios disponibles.
 
 ![Consola GCP](./img/gcp-dashboard.png)
 
