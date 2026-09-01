@@ -22,10 +22,17 @@
 
 2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](./reto02_instanciaEC2/README.md)
 
-   Despliegue de una instancia EC2, configuración del acceso SSH,
-   actualización del sistema y primeras medidas de seguridad.
+   Despliegue de una instancia EC2, configuración del acceso SSH, actualización del sistema y primeras medidas de seguridad.
 
 3. [Reto 3: Almacenamiento y recuperación de archivos](./reto03_storage/README.md)
 
-   AWS: Creación del bucket en AWS S3. Carga de archivos. Gestión de permisos de acceso y creación de enlaces URL
-   GCP:
+   Creación de buckets de almacenamiento, subir un archivo y configurar permisos de acceso.
+
+   Generar una URL segura y temporal para recuperar el archivo.
+
+   Comprobar la diferencia entre acceso privado, acceso mediante URL prefirmada y acceso público.
+
+   - [AWS — Amazon S3](./reto03_storage/README.md#aws--amazon-s3)
+   - [Google Cloud Storage](./reto03_storage/README.md#google-cloud-storage)
+
+4. [Reto 4: ...proximamente](./#)

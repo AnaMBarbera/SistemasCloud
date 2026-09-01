@@ -259,3 +259,248 @@ Esto permite diferenciar entre:
 - **Acceso privado:** requiere permisos.
 - **URL prefirmada:** acceso temporal y controlado.
 - **URL pública:** cualquier usuario que disponga de la URL puede acceder mientras el recurso sea público.
+
+<br>
+
+# Google Cloud Storage
+
+## 1. Creación del bucket
+
+Se creó el bucket:
+
+```text
+ana-storage-reto3-gcp
+```
+
+### Configuración utilizada:
+
+| Configuración                 | Valor                   |
+| ----------------------------- | ----------------------- |
+| Ubicación europe-southwest1   | (Madrid)                |
+| Tipo de ubicación             | Region                  |
+| Clase de almacenamiento       | Standard                |
+| Espacio de nombres jerárquico | Inhabilitado            |
+| Rapid Cache                   | Inhabilitado            |
+| Control de acceso             | Uniforme                |
+| Prevención de acceso público  | Activada                |
+| Encriptación                  | Administrada por Google |
+
+---
+
+![Creación del bucket](./img/gcp_storage_bucket.png)
+
+La elección de la región de Madrid permite mantener los datos en una región de Google Cloud cercana al entorno de trabajo.
+
+## 2. Protección de los datos
+
+Se mantiene habilitada la política de eliminación no definitiva (Soft Delete) con la configuración predeterminada de Google Cloud.
+
+Esta característica permite conservar temporalmente el bucket y los objetos después de su eliminación para poder recuperarlos durante el período establecido.
+
+También se mantienen deshabilitados:
+
+```text
+Controles de versiones de objetos.
+Política de retención del bucket.
+Retención de objetos.
+```
+
+La encriptación utilizada es Administrada por Google, que proporciona cifrado de los datos almacenados sin necesidad de gestionar manualmente las claves.
+
+[Configuración del bucket](./img/gcp_storage_bucket_config.png)
+
+## 3. Subir un archivo
+
+Se creó un archivo de prueba:
+
+```text
+reto3-gcp.txt
+```
+
+y se almacenó en el bucket:
+
+```text
+gs://ana-storage-reto3-gcp/reto3-gcp.txt
+```
+
+El archivo tiene un tamaño de 70 B y es de tipo text/plain.
+
+![Carga del archivo](./img/gcp_storage_upload.png)
+
+[Detalles del archivo](./img/gcp_storage_object.png)
+
+## 4. Configuración de permisos
+
+El bucket utiliza Control de acceso uniforme, por lo que los permisos se gestionan mediante IAM a nivel de bucket.
+
+El bucket permanece configurado como:
+
+```text
+Acceso público: No público
+```
+
+No se concede acceso a allUsers.
+
+[Configuración de permisos](./img/gcp_storage_permissions.png)
+
+### Cuenta de servicio para generar URLs firmadas
+
+Se creó la cuenta de servicio:
+
+```text
+reto3-storage-signer@bases-de-datos-con-firebase.iam.gserviceaccount.com
+```
+
+Esta cuenta dispone del rol:
+
+```text
+Storage Object Viewer
+```
+
+permitiéndole leer los objetos almacenados en el bucket.
+
+Además, el usuario utilizado para realizar el ejercicio dispone sobre esta cuenta de servicio del rol:
+
+```text
+Creador de tokens de cuenta de servicio
+```
+
+Este permiso permite utilizar la cuenta de servicio para generar firmas mediante la suplantación de identidad.
+
+[Cuenta de servicios](./img/gcp_storage_signed_url_permissions.png)
+
+## 5. Generar una URL firmada
+
+Para proporcionar acceso temporal al archivo sin hacerlo público se utilizó una Signed URL.
+
+Desde Google Cloud Shell se comprobó primero la cuenta autenticada:
+
+```bash
+gcloud auth list
+```
+
+También se comprobó el proyecto activo:
+
+```bash
+gcloud config get-value project
+```
+
+La URL firmada se generó mediante:
+
+```bash
+gcloud storage sign-url gs://ana-storage-reto3-gcp/reto3-gcp.txt \
+ --duration=1h \
+ --region=europe-southwest1 \
+ --impersonate-service-account=reto3-storage-signer@bases-de-datos-con-firebase.iam.gserviceaccount.com
+```
+
+La opción:
+
+```bash
+--duration=1h
+```
+
+establece una validez de una hora.
+
+La opción:
+
+```bash
+--impersonate-service-account
+```
+
+permite utilizar la cuenta de servicio reto3-storage-signer para realizar la firma sin necesidad de crear ni descargar una clave privada.
+
+Seguridad: la URL firmada contiene información de autenticación. La captura utilizada en el portfolio oculta los parámetros sensibles de la URL.
+
+[Generación de URL](./img/gcp_storage_signed_url.png)
+
+## 6. Recuperar el archivo mediante la URL firmada
+
+La URL firmada se abrió desde un navegador sin necesidad de modificar la configuración de acceso público del bucket.
+
+El contenido de:
+
+```text
+reto3-gcp.txt
+```
+
+se pudo visualizar correctamente.
+
+Esto demuestra que es posible proporcionar acceso temporal a un objeto privado mediante una URL firmada.
+
+![Visualización en el navegador](./img/gcp_storage_signed_url_access.png)
+
+La configuración del bucket continúa siendo:
+
+**Acceso público: No público**
+
+Si se utiliza la url pública en este momento vemos que el acceso se deniega
+
+![Visualización en el navegador](./img/gcp_storage_private_access.png)
+
+Durante el ejercicio no se habilitó el acceso público al bucket.
+
+Sin embargo, se documenta el procedimiento para conocer cómo se realizaría si fuera necesario.
+
+Con el control de acceso uniforme, habría que:
+
+Desactivar la prevención de acceso público del bucket.
+Añadir el principal:
+
+```text
+allUsers
+```
+
+Concederle el rol:
+
+```text
+Storage Object Viewer
+```
+
+Utilizar la URL pública del objeto:
+
+```text
+https://storage.googleapis.com/ana-storage-reto3-gcp/reto3-gcp.txt
+```
+
+Con esta configuración cualquier usuario de Internet podría leer el objeto sin autenticarse.
+
+## 8. Evidencias de aprendizaje
+
+Las capturas utilizadas para documentar el ejercicio muestran:
+
+Configuración del bucket.
+
+Ubicación en Madrid.
+
+Clase de almacenamiento Standard.
+
+Protección de los datos.
+
+Archivo almacenado.
+
+Configuración de permisos.
+
+Permisos de la cuenta de servicio.
+
+Permiso para generar tokens.
+
+Generación de la URL firmada.
+
+Acceso al archivo mediante la URL firmada.
+
+Las URLs firmadas y cualquier otro dato que pueda utilizarse como credencial o mecanismo de autenticación no se incluyen completas en el repositorio.
+
+## Resultado
+
+Se ha completado el almacenamiento y recuperación de archivos mediante Google Cloud Storage.
+
+La configuración final mantiene el bucket privado y utiliza una URL firmada temporal para proporcionar acceso controlado al archivo.
+
+## Navegación
+
+<- [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](../reto02_instanciaEC2/README.md)
+
+🏠 [Índice del Portfolio](../README.md)
+
+-> [Reto 4: ...](#)
