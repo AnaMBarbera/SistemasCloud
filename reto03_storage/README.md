@@ -503,4 +503,4 @@ La configuración final mantiene el bucket privado y utiliza una URL firmada tem
 
 🏠 [Índice del Portfolio](../README.md)
 
--> [Reto 4: ...](#)
+-> [Reto 4: Desplegar una máquina virtual en GCP y Microsoft Azure](../reto04_VM/README.md)
