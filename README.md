@@ -1,38 +1,104 @@
 # Portfolio de Sistemas Cloud
 
-¡Hola! Bienvenid@ a mi portfolio de aprendizaje en la nube. En este espacio documento de forma práctica mis habilidades, arquitecturas y laboratorios desplegados en diferentes proveedores cloud.
+¡Hola! Bienvenid@ a mi portfolio de aprendizaje en la nube.
+
+En este espacio documento de forma práctica mis habilidades, arquitecturas y laboratorios desplegados en diferentes proveedores cloud.
+
+---
+
+## Mi itinerario
+
+Este portfolio recoge el aprendizaje práctico realizado a lo largo de las diferentes unidades formativas del itinerario de Sistemas Cloud.
+
+<table>
+<tr>
+
+<td align="center" width="50%">
+
+<a href="./unidad03/README.md">
+<img src="./img/nivel03.png" alt="Nivel 03" width="100%">
+</a>
+
+### Unidad 03
+
+**Fundamentos y servicios Cloud**
+
+[Ver unidad →](./unidad03/README.md)
+
+</td>
+
+<td align="center" width="50%">
+
+<a href="./unidad04/README.md">
+<img src="./img/nivel04.png" alt="Nivel 04" width="100%">
+</a>
+
+### Unidad 04
+
+**Próximamente**
+
+[Ver unidad →](./unidad04/README.md)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="50%">
+
+<a href="./unidad05/README.md">
+<img src="./img/nivel05.png" alt="Nivel 05" width="100%">
+</a>
+
+### Unidad 05
+
+**Próximamente**
+
+[Ver unidad →](./unidad05/README.md)
+
+</td>
+
+<td align="center" width="50%">
+
+<a href="./unidad06/README.md">
+<img src="./img/nivel06.png" alt="Nivel 06" width="100%">
+</a>
+
+### Unidad 06
+
+**Próximamente**
+
+[Ver unidad →](./unidad06/README.md)
+
+</td>
+
+</tr>
+</table>
+
+---
 
 ## Navegación
 
 - [Inicio](./README.md)
-- [Retos Nivel 3](#proyectos-y-retos-resueltos)
+- [Unidad 03](./unidad03/README.md)
 - [Tecnologías y proveedores](#tecnologías-y-proveedores)
 
-## Tecnologías y Proveedores
+---
 
-- **Cloud:** Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure
-- **Linux:** Administración de sistemas, SSH, Gestión de paquetes
+## Tecnologías y proveedores
 
-## Proyectos y Retos Resueltos del Nivel 3
+- **Cloud:** Amazon Web Services (AWS), Google Cloud Platform (GCP),
+  Microsoft Azure
+- **Linux:** Administración de sistemas, SSH, gestión de paquetes
 
-1. [Reto 1: Inicialización de Entornos Cloud (AWS & GCP)](./reto01_registro/README.md)
+---
 
-   Configuración inicial de los entornos AWS y GCP, gestión de costes,
-   Free Tier y medidas básicas de seguridad.
+## Estado del itinerario
 
-2. [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](./reto02_instanciaEC2/README.md)
-
-   Despliegue de una instancia EC2, configuración del acceso SSH, actualización del sistema y primeras medidas de seguridad.
-
-3. [Reto 3: Almacenamiento y recuperación de archivos](./reto03_storage/README.md)
-
-   Creación de buckets de almacenamiento, subir un archivo y configurar permisos de acceso.<br>
-   Generar una URL segura y temporal para recuperar el archivo.<br>
-   Comprobar la diferencia entre acceso privado, acceso mediante URL prefirmada y acceso público.
-
-   - [AWS — Amazon S3](./reto03_storage/README.md#aws--amazon-s3)
-   - [Google Cloud Storage](./reto03_storage/README.md#google-cloud-storage)
-
-4. [Reto 4: Desplegar una máquina virtual en GCP y Microsoft Azure](./reto04_VM/README.md)
-
-   Despliegue y configuración de máquinas virtuales en servicios cloud, realizando la conexión remota y explorando las principales opciones de administración, seguridad, almacenamiento, red, monitorización y automatización
+| Unidad    | Estado        |
+| --------- | ------------- |
+| Unidad 03 | ✅ Completada |
+| Unidad 04 | ⏳ Pendiente  |
+| Unidad 05 | ⏳ Pendiente  |
+| Unidad 06 | ⏳ Pendiente  |

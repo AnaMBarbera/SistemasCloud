@@ -1,6 +1,6 @@
-# Reto 3 — Almacenamiento y recuperación de archivos
+[Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) -> [Reto 3](./README.md)
 
-**[Portfolio](../README.md) › Reto 3**
+# Reto 3 — Almacenamiento y recuperación de archivos
 
 ## Objetivo
 
@@ -499,8 +499,10 @@ La configuración final mantiene el bucket privado y utiliza una URL firmada tem
 
 ## Navegación
 
-<- [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](../reto02_instanciaEC2/README.md)
+🏠 [Índice del Portfolio](../../README.md)
 
-🏠 [Índice del Portfolio](../README.md)
+<- [Unidad 3](../README.md)
+
+<- [Reto 2: Despliegue y Configuración de Instancia EC2 en AWS](../reto02_instanciaEC2/README.md)
 
 -> [Reto 4: Desplegar una máquina virtual en GCP y Microsoft Azure](../reto04_VM/README.md)
