@@ -19,25 +19,29 @@ Este portfolio recoge el aprendizaje práctico realizado a lo largo de las difer
 <img src="./img/nivel03.png" alt="Nivel 03" width="100%">
 </a>
 
-### Unidad 03
+<h3>Unidad 03</h3>
 
-**Fundamentos y servicios Cloud**
+<p><strong>Fundamentos y servicios Cloud</strong></p>
 
-[Ver unidad →](./unidad03/README.md)
+<p>
+<a href="./unidad03/README.md">Ver unidad →</a>
+</p>
 
 </td>
 
 <td align="center" width="50%">
 
-<a href="./unidad04/README.md">
+<a href="#">
 <img src="./img/nivel04.png" alt="Nivel 04" width="100%">
 </a>
 
-### Unidad 04
+<h3>Unidad 04</h3>
 
-**Próximamente**
+<p><strong>Próximamente</strong></p>
 
-[Ver unidad →](./unidad04/README.md)
+<p>
+<a href="#">Ver unidad →</a>
+</p>
 
 </td>
 
@@ -47,29 +51,33 @@ Este portfolio recoge el aprendizaje práctico realizado a lo largo de las difer
 
 <td align="center" width="50%">
 
-<a href="./unidad05/README.md">
+<a href="#">
 <img src="./img/nivel05.png" alt="Nivel 05" width="100%">
 </a>
 
-### Unidad 05
+<h3>Unidad 05</h3>
 
-**Próximamente**
+<p><strong>Próximamente</strong></p>
 
-[Ver unidad →](./unidad05/README.md)
+<p>
+<a href="#">Ver unidad →</a>
+</p>
 
 </td>
 
 <td align="center" width="50%">
 
-<a href="./unidad06/README.md">
+<a href="#">
 <img src="./img/nivel06.png" alt="Nivel 06" width="100%">
 </a>
 
-### Unidad 06
+<h3>Unidad 06</h3>
 
-**Próximamente**
+<p><strong>Próximamente</strong></p>
 
-[Ver unidad →](./unidad06/README.md)
+<p>
+<a href="#">Ver unidad →</a>
+</p>
 
 </td>
 
