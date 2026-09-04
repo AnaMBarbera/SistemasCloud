@@ -24,7 +24,7 @@ Este portfolio recoge el aprendizaje práctico realizado a lo largo de las difer
 <p><strong>Fundamentos y servicios Cloud</strong></p>
 
 <p>
-<a href="./unidad03/README.md">Ver unidad →</a>
+<a href="./unidad03/">Ver unidad →</a>
 </p>
 
 </td>
