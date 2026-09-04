@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-image: linear-gradient(120deg, #030D5F, #7C684B);
+  padding: 2.5rem 0 2.5rem; /* Superior/inferior | Laterales (se ignoran/heredan) */
+}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4 {
+    color: #7C684B;
+  }
+
+a {
+  color: #1e6bb8;
+}
