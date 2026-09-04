@@ -1,7 +1,3 @@
----
-layout: default
----
-
 [Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) -> [Reto 2](./README.md)
 
 # Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux via SSH

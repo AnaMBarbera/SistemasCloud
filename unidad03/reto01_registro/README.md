@@ -1,7 +1,3 @@
----
-layout: default
----
-
 [Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) › [Reto 1](./README.md)
 
 # Reto 1: Configuración de Entornos Cloud y Gestión de Costes (AWS & GCP)

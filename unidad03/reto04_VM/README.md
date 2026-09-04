@@ -1,7 +1,3 @@
----
-layout: default
----
-
 [Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) -> [Reto 4](./README.md)
 
 # Reto 4: Desplegar una máquina virtual en GCP y Microsoft Azure
