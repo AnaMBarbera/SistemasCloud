@@ -1,7 +1,7 @@
 ---
 ---
 
-[Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) › [Reto 1](./README.md)
+[Mi Portfolio](../../) -> [Unidad 3](../) › [Reto 1](./)
 
 # Reto 1: Configuración de Entornos Cloud y Gestión de Costes (AWS & GCP)
 
@@ -143,8 +143,8 @@ Esta configuración proporciona una base segura para continuar con los siguiente
 
 ## Navegación
 
-🏠 [Índice del Portfolio](../../README.md)
+🏠 [Índice del Portfolio](../../)
 
--> [Unidad 3](../README.md)
+-> [Unidad 3](../)
 
--> [Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux vía SSH](../reto02_instanciaEC2/README.md)
+-> [Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux vía SSH](../reto02_instanciaEC2/)

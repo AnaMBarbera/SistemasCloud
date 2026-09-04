@@ -1,7 +1,7 @@
 ---
 ---
 
-[Mi Portfolio](../README.md) -> [Unidad 03](./README.md)
+[Mi Portfolio](../) -> [Unidad 03](./)
 
 # Unidad 03 — Sistemas Cloud
 
@@ -18,7 +18,7 @@ Se han documentado los retos y prácticas realizados en esta unidad.
 Configuración inicial de los entornos AWS y GCP, gestión de costes,
 Free Tier y medidas básicas de seguridad.
 
-[Ver Reto 1 →](./reto01_registro/README.md)
+[Ver Reto 1 →](./reto01_registro/)
 
 ---
 
@@ -27,7 +27,7 @@ Free Tier y medidas básicas de seguridad.
 Despliegue de una instancia EC2, configuración del acceso SSH,
 actualización del sistema y primeras medidas de seguridad.
 
-[Ver Reto 2 →](./reto02_instanciaEC2/README.md)
+[Ver Reto 2 →](./reto02_instanciaEC2/)
 
 ---
 
@@ -36,7 +36,7 @@ actualización del sistema y primeras medidas de seguridad.
 Creación de buckets de almacenamiento, subida de archivos,
 configuración de permisos y generación de URLs seguras y temporales.
 
-[Ver Reto 3 →](./reto03_storage/README.md)
+[Ver Reto 3 →](./reto03_storage/)
 
 ---
 
@@ -47,4 +47,4 @@ realizando conexiones remotas y explorando las principales opciones
 de administración, seguridad, almacenamiento, red, monitorización
 y automatización.
 
-[Ver Reto 4 →](./reto04_VM/README.md)
+[Ver Reto 4 →](./reto04_VM/)

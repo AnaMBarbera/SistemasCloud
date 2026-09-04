@@ -1,7 +1,7 @@
 ---
 ---
 
-[Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) -> [Reto 4](./README.md)
+[Mi Portfolio](../../) -> [Unidad 3](../) -> [Reto 4](./)
 
 # Reto 4: Desplegar una máquina virtual en GCP y Microsoft Azure
 
@@ -306,8 +306,8 @@ La práctica permite comprender el ciclo básico de creación, configuración, a
 
 ## Navegación
 
-🏠 [Índice del Portfolio](../../README.md)
+🏠 [Índice del Portfolio](../../)
 
-<- [Unidad 3](../README.md)
+<- [Unidad 3](../)
 
-<- [Reto 3: Almacenamiento y recuperación de archivos](../reto03_storage/README.md)
+<- [Reto 3: Almacenamiento y recuperación de archivos](../reto03_storage/)

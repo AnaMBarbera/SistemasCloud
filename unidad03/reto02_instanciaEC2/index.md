@@ -1,7 +1,7 @@
 ---
 ---
 
-[Mi Portfolio](../../README.md) -> [Unidad 3](../README.md) -> [Reto 2](./README.md)
+[Mi Portfolio](../../) -> [Unidad 3](../) -> [Reto 2](./)
 
 # Reto 2: Despliegue de Servidor Virtual (AWS EC2) y Configuración Linux via SSH
 
@@ -70,10 +70,10 @@ sudo apt update && sudo apt upgrade -y
 
 ## Navegación
 
-🏠 [Índice del Portfolio](../../README.md)
+🏠 [Índice del Portfolio](../../)
 
-<- [Unidad 3](../README.md)
+<- [Unidad 3](../)
 
-<- [Reto 1: Inicialización de Entornos Cloud](../reto01_registro/README.md)
+<- [Reto 1: Inicialización de Entornos Cloud](../reto01_registro/)
 
--> [Reto 3: Almacenamiento y recuperación de archivos](../reto03_storage/README.md)
+-> [Reto 3: Almacenamiento y recuperación de archivos](../reto03_storage/)

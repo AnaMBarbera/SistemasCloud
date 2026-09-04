@@ -15,7 +15,7 @@ Este portfolio recoge el aprendizaje práctico realizado a lo largo de las difer
 
 <td align="center" width="50%">
 
-<a href="./unidad03/README.md">
+<a href="./unidad03/">
 <img src="./img/nivel03.png" alt="Nivel 03" width="100%">
 </a>
 
@@ -88,8 +88,8 @@ Este portfolio recoge el aprendizaje práctico realizado a lo largo de las difer
 
 ## Navegación
 
-- [Inicio](./README.md)
-- [Unidad 03](./unidad03/README.md)
+- [Inicio](./)
+- [Unidad 03](./unidad03/)
 - [Tecnologías y proveedores](#tecnologías-y-proveedores)
 
 ---
