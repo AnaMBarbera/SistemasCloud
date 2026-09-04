@@ -1,0 +1,13 @@
+# Jekyll
+_site/
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+*.gem
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
