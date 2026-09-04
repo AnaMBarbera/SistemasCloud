@@ -1,7 +1,8 @@
 theme: jekyll-theme-cayman
 
-# Esto obliga a Jekyll a aplicar el tema de forma global
-plugins:
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
+# Configuramos Jekyll para que aplique el layout del tema a TODO automáticamente
+defaults:
+  - scope:
+      path: "" # Se aplica a todos los archivos del repositorio
+    values:
+      layout: "default" # Fuerza el layout por defecto de Cayman remoto
